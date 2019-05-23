@@ -131,10 +131,10 @@ alex?.getInfo()
 
 
 class Man: User {
-    var razmerChlena: Int
+    var beardSize: Int
     
-    init(name: String, age: Int, razmerChlena: Int) {
-        self.razmerChlena = razmerChlena
+    init(name: String, age: Int, beardSize: Int) {
+        self.beardSize = beardSize
         super.init(name: name, age: age)
     }
     
@@ -143,12 +143,12 @@ class Man: User {
     }
     
     override func getInfo() {
-        print("User name \(name), user age \(age), pennis size \(razmerChlena)")
+        print("User name \(name), user age \(age), beard size \(beardSize)")
         
     }
 }
 
-var ignat = Man(name: "Ignat", age: 97, razmerChlena: -20)
+var ignat = Man(name: "Ignat", age: 97, beardSize: 20)
 ignat.getInfo()
 
 
